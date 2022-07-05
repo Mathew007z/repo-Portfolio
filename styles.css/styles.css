@@ -384,7 +384,7 @@ div.divider{
           display: flex;
           justify-content: space-evenly;
           flex-direction: column;
-          margin-left: 3em;
+          margin-left: 4.5em;
         }
          .info-content{
           grid-row: 1/1;
