@@ -1,0 +1,405 @@
+
+
+:root {
+
+
+        /* Colors */   
+
+        --primary: #121d2b;
+        --secondary: #fff;
+        --alternative:#1b3437;
+        --text-color:#000;
+        --legth-color:#17DFC7;
+
+
+        /* Spacings */
+
+        --spacing-large:6rem;
+        --spacing-medium:2.4rem;
+        --spacing-small:2rem;
+        --spacing-xsmall:1rem;
+
+        /* Font-Family */
+
+        --font-principal:'Fjalla One', sans-serif;
+        --font-secundary:'Great Vibes', cursive;
+        --font-tres:'Montserrat', sans-serif;
+
+
+        /*Font-sizes */
+
+        --text-large: 5.2rem;
+        --text-medium:2.2rem;
+        --text-base:1.6rem;
+        --text-small:1.4rem;
+
+    }
+
+    /*Estilos Globales*/
+    *::after,
+    *::before,
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html{
+        font-size: 62.5%;
+    }
+
+    body{
+        font-family:var(--font-tres);
+        
+       
+        
+    }
+
+
+    /*Comienzo Header*/
+
+
+    .wrapper
+   {
+        width: 100vw;
+        height: 100vh;
+        background-color: #191c32;
+        color: #fff;
+
+    }
+
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 2em;
+        flex-wrap: wrap;
+    }
+
+    .brand h2{
+        font-size: 35px;
+        padding-left: 4rem;
+        margin-top: .5em;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .brand span{
+        color: var(--legth-color);
+
+    }
+
+    .menu{
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    ul.menu{
+        padding-right: 10rem;
+        margin-top: 3em;
+    }
+    .menu li{
+        list-style: none;
+    }
+
+   
+    .menu a{
+        color: var(--secondary);
+        text-decoration: none;
+        font-size: var(--text-medium);
+        padding: 10px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        
+
+    }
+
+    .menu a:hover{
+            background-color: var(--legth-color);
+            color: var(--secondary);
+            transition: ease-in .5s;
+    }
+
+
+  /*Comienzo del Main*/
+
+  .main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr auto);
+    align-items: center;
+  }
+
+  .info-content{
+    grid-column: 1/6;
+    grid-row: 1/12;
+  }
+  .main h1{
+    font-size: var(--text-large);
+  }
+
+  span{
+    color: var(--legth-color);
+  }
+
+  .download-cv{
+    padding: 10px 20px;
+    background-color: var(--legth-color);
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor:pointer;
+    box-shadow: 1px 3px 11px 5px;
+    color: rgba(1, 2, 100, .48);
+
+  }
+  .info-content p{
+    font-size: var(--text-small);
+    font-family: var(--font-tres);
+  }
+
+  .download-cv:hover{
+    background-color: var(--secondary);
+    box-shadow: none;
+  }
+
+  .main img{
+    width: 350px;
+    border: 5px solid var(--legth-color);
+    margin-left: 5rem;
+    height: auto;
+    grid-column:7/12 ;
+  }
+
+
+ /*Sobre mi*/
+
+
+ 
+.about{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
+  align-items: center;
+}
+
+.about img{
+  width: 100%;
+  grid-column:1/5;
+}
+
+.about-info{
+  grid-column: 5/10;
+  padding: 7em;
+}
+
+.about-info h2{
+  font-size: var(--text-large);
+  font-family: var(--font-tres);
+  color:#191c32;
+}
+
+.about-info p{
+  font-size: var(--text-small);
+  font-family: var(--font-tres);
+}
+
+
+/*Proyectos*/
+
+
+.portfolio{
+  background-color: #191c32;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4,1fr);
+}
+
+
+.headings__tittle{
+
+  padding: 5em;
+  color: var(--secondary);
+  
+  
+}
+.headings__tittle h2{
+  font-size: var(--text-large);
+  margin-top: 4em;
+  font-family: var(--font-tres);
+
+
+}
+div.container{
+  grid-row: 2/3;
+  grid-column: 1/12;
+  display: flex;
+  justify-content: space-evenly;
+}
+div.divider{
+  width: 150px;
+  background-color: var(--legth-color);
+  height: 5px;
+}
+
+.card{
+  width: 300px;
+  margin-bottom: 120px;
+  
+  
+}
+
+.card__img{
+  width: 100%;
+  height: 150px;
+  background-image: url(/img/industry-4-gc537a4d39_1920.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card__tittle{
+  padding: 20px;
+  font-family: var(--font-tres);
+  color: var(--primary);
+}
+
+.projects-links {
+  display: flex;
+  justify-content: space-evenly;
+ 
+
+}
+.projects-links i{
+  font-size: 2em;
+  color: var(--primary);
+  
+}
+
+
+
+.card .projects-links{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.project-details {
+  width: 200px;
+  margin-left: 4.8em;
+  margin-bottom: 1em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+
+         .menu a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: var(--text-small);
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    
+
+      }
+        .main{
+          margin: 0 auto;
+          width: 80vw;
+          height: 80vh;
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+          
+          align-items: center;
+        }
+
+        .main img{
+          grid-column: 9/12;
+          grid-row: 1/1;
+          width: 150px;
+          margin-top: 8em;
+        }
+
+        .about{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr) ;
+          
+          width: 100vw;
+          align-items: center;
+        }
+
+        .about-info{
+          grid-column: 1/4;
+          grid-row: 2/4;
+          padding: 7em;
+        }
+
+        .main h1{
+          font-size: var(--text-medium);
+          grid-column: 1/8;
+          grid-row: 2/4;
+        }
+        .main p{
+          font-size: var(--text-xsmall);
+        }
+        div.container{
+          grid-row: 2/4;
+          grid-column: 1/2;
+          display: flex;
+          justify-content: space-evenly;
+          flex-direction: column;
+          margin-left: 3em;
+        }
+         .info-content{
+          grid-row: 1/1;
+         }
+       
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
