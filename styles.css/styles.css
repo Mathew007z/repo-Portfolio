@@ -422,11 +422,7 @@ div.divider{
     font-family: var(--font-tres);
   }
 
-  .contacto-info .nombre{
-    font-family: var(--font-tres);
-    font-size: var(--text-small);
-    color: var(--legth-color);
-  }
+  
 
 .contacto-info h4, 
 .contacto-info ul, 
@@ -435,7 +431,8 @@ div.divider{
   text-align: center;
   margin: 0 0 1rem 0;
   font-family: var(--font-tres);
-  font-size: var(--text-xsmall);
+  font-size: var(--text-small);
+  
 }
 
 
