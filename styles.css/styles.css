@@ -270,12 +270,14 @@ div.divider{
 .projects-links {
   display: flex;
   justify-content: space-evenly;
+  
  
 
 }
 .projects-links i{
   font-size: 2em;
   color: var(--primary);
+  
   
 }
 
@@ -389,10 +391,104 @@ div.divider{
          .info-content{
           grid-row: 1/1;
          }
+
+         .about img{
+          width: 280px;
+         }
        
+ }
+
+ @media (max-width:  767.98px) {
+
+  .menu a{
+color: var(--secondary);
+text-decoration: none;
+font-size: var(--text-small);
+padding: 5px;
+display: flex;
+flex-wrap: wrap;
+
+
+
+
+}
+ .main{
+   margin: 0 auto;
+   width: 80vw;
+   height: 80vh;
+   display: grid;
+   grid-template-columns: repeat(1,1fr);
+   
+   align-items: center;
+ }
+
+ .main img{
+   grid-column: 9/12;
+   grid-row: 1/1;
+   width: 150px;
+   margin-top: 8em;
+ }
+
+ .about{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr) ;
+   
+   width: 100vw;
+   align-items: center;
+ }
+
+ .about-info{
+   grid-column: 1/4;
+   grid-row: 2/4;
+   padding: 7em;
+ }
+
+ .main h1{
+   font-size: var(--text-medium);
+   grid-column: 1/8;
+   grid-row: 2/4;
+ }
+ .main p{
+   font-size: var(--text-xsmall);
+ }
+ div.container{
+   grid-row: 2/4;
+   grid-column: 1/2;
+   display: flex;
+   justify-content: space-evenly;
+   flex-direction: column;
+   margin-left: 4.5em;
+ }
+  .info-content{
+   grid-row: 1/1;
+  }
+
+}
+
+
+@media (max-width: 991.98px) { 
+
+          .main img{
+            grid-column: 9/12;
+            grid-row: 1/1;
+            width: 165px;
+            margin-top: 8em;
+  }
+
+
+  .main h1{
+    font-size: var(--text-medium);
+    grid-column: 1/8;
+    grid-row: 2/4;
+  }
+  .main p{
+    font-size: var(--text-xsmall);
+  }
+
  }
  
 
+ 
 
 
 
