@@ -354,7 +354,7 @@ div.divider{
         .main img{
           grid-column: 9/12;
           grid-row: 1/1;
-          width: 150px;
+          width: 100px;
           margin-top: 8em;
         }
 
@@ -394,8 +394,15 @@ div.divider{
 
          .about img{
           width: 280px;
+          margin-left: 4em;
          }
-       
+         .card{
+          width: 300px;
+          margin-bottom: 120px;
+          margin-left: 1.5em;
+          
+          
+        }
  }
 
  @media (max-width:  767.98px) {
