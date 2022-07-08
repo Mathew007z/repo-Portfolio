@@ -268,6 +268,7 @@ div.divider{
   padding: 20px;
   font-family: var(--font-tres);
   color: var(--primary);
+  margin-left: 3em;
 }
 
 .projects-links {
@@ -285,6 +286,36 @@ div.divider{
 }
 
 
+i.bi.bi-envelope:hover{
+
+  font-size: 2.5em;
+  transition: ease-in .5s;
+  color: #000;
+
+}
+
+
+i.bi.bi-github:hover{
+  font-size: 2.5em;
+  transition: ease-in .5s;
+}
+
+i.bi.bi-linkedin:hover{
+
+  font-size: 2.5em;
+  color: #1A6AB5;
+  transition: ease-in .5s;
+}
+
+i.bi.bi-whatsapp:hover{
+
+      transition: ease-in .5s;
+      color: #0A7D26;
+      font-size: 2.5em;
+      
+}
+
+
 
 .card .projects-links{
   display: flex;
@@ -297,6 +328,11 @@ div.divider{
   margin-left: 4.8em;
   margin-bottom: 1em;
 
+}
+
+.project-details a{
+   text-decoration: none;
+   color: var(--primary);
 }
 
 
@@ -580,8 +616,11 @@ div.divider{
           
         }
         .card__tittle h2{
-          margin-left: 1.5em;
+          margin-left: .5em;
+          
+
         }
+        
  }
 
  @media (max-width:  767.98px) {
@@ -673,6 +712,47 @@ div.divider{
 
  }
  
+
+
+ @media (max-width:400px){
+
+
+  .main img{
+    grid-column: 9/12;
+    grid-row: 1/1;
+    width: 60px;
+    margin-top: 8em;
+    margin-right: 10em;
+}
+
+.about img{
+  width: 150px;
+  margin-left: 4em;
+ }
+ .main h1{
+  font-size: var(--text-small);
+  grid-column: 1/8;
+  grid-row: 2/4;
+}
+
+.main p{
+  font-size:.5em;
+}
+
+
+.info-content{
+  grid-column: 1/6;
+  grid-row: 1/9;
+}
+div.container{
+  grid-row: 2/4;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-left: 1em;
+}
+ }
 
  
 
